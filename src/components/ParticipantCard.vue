@@ -39,11 +39,6 @@
 
 <script>
     export default {
-        data() {
-            return {
-
-            }
-        },
         props: {
             participant: {
                 type: Object,
