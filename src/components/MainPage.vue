@@ -27,18 +27,17 @@
         </div>
 
         <div class="container">
-            <p class="has-text-white-ter title mt-5">Достижения / Achievments</p>
+            <p class="has-text-white-ter title mt-5">Достижения / Achievments:</p>
         </div>
 
-        <div class="tile is-parent is-11 mx-auto"
-        v-for="(event, index) in eventsData"
-        :key="index"
-        >
+        <div class="achievments-container mx-2">
             <AchievmentCard
+            v-for="(event, index) in eventsData"
+            :key="index"
             :event="event"
             />
         </div>
-        
+            
         <BaseFooter />
     </div>
 </template>
@@ -175,9 +174,12 @@ import AchievmentCard from './AchievmentCard.vue'
         line-height: 1.1;
         font-size: 30px;
     }
-    .member-info-container {
+    .member-info-container, .achievments-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
         column-gap: 20px;
+    }
+    .achievments-container {
+        row-gap: 20px;
     }
 </style>
