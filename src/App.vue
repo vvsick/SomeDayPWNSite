@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="has-background-grey-darker">
+  <div id="app">
     <MainPage />
   </div>
 </template>
@@ -22,5 +22,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  background-color: #141414;
 }
 </style>

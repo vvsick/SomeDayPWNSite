@@ -8,11 +8,11 @@
                         Few words about us:
                     </p>
                 </div>
-                <p class="subtitle has-text-white-ter">
+                <p class="subtitle has-text-grey-lighter">
                     SomeDayPWN - команда студентов и выпускников СПбГУТ, собранная для участия в различных CTF-ивентах. В нашей команде каждый участник развивает свои навыки, делится опытом и переживает неповторимые эмоции от решения различного рода задач. Для нас является первостепенным постоянный прогресс членов команды, совместное прохождение препятствий и приятное времяпрепровождение. SomeDayPWN участвует во многих CTF-ивентах преимущественно online формата, однако очень часто для этого собирается в одном месте. Спешим напомнить, что мы ищем новых членов команды в наш дружный коллектив, заполнить анкету ты сможешь в самом низу страницы. Мы ждем именно тебя!
                 </p>
-                <p class="subtitle has-text-white-ter">
-                    SomeDayPWN - a team of students and graduates of St. Petersburg State University of Telecommunications, gathered to participate in various CTF-events. In our team, each participant develops his hard and soft skills, shares his experience between team members and feel unique emotions from solving various kind of tasks. For us, the constant progress of team members, the joint passage of obstacles and a pleasant pastime is paramount. SomeDayPWN participates in many CTF-events, mostly online, but very often gathers in one place for this. We hasten to remind ypu that we are looking for new team members to our friendly team, so you cab fill out the form at the very bottom of the page. We are waiting for you!
+                <p class="subtitle has-text-grey-lighter">
+                    SomeDayPWN - a team of students and graduates of St. Petersburg State University of Telecommunications, gathered to participate in various CTF-events. In our team, each participant develops his hard and soft skills, shares his experience between team members and feel unique emotions from solving various kind of tasks. For us, the constant progress of team members, the joint passage of obstacles and a pleasant pastime is paramount. SomeDayPWN participates in many CTF-events, mostly online, but very often gathers in one place for this. We hasten to remind you that we are looking for new team members to our friendly team, so you cab fill out the form at the very bottom of the page. We are waiting for you!
                 </p>
             </div>
             
@@ -181,5 +181,15 @@ import AchievmentCard from './AchievmentCard.vue'
     }
     .achievments-container {
         row-gap: 20px;
+    }
+    .box {
+        background-color: #222222;
+    }
+    .hoverable-link:hover {
+        fill: #57a37b !important;
+        color: #57a37b !important;
+    }
+    .icon {
+        fill: #ffffff;
     }
 </style>
