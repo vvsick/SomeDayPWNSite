@@ -24,4 +24,15 @@ export default {
   text-align: center;
   background-color: #141414;
 }
+body::-webkit-scrollbar {
+  width: 6px;
+}
+body::-webkit-scrollbar-track {
+  background: #222222;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #33614a;
+  border-radius: 20px;
+  border: none;
+}
 </style>

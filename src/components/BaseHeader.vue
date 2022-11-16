@@ -1,15 +1,20 @@
 <template>
     <nav class="navbar is-transparent">
-        <div id="navbarBasicExample" class="navbar-menu"> 
+        <div class="navbar-menu">
             <div class="navbar-start">
                 <div class="navbar-item">
                     <div>
-                        <h1 class="has-text-white-ter is-bold logo-title">SomeDayPWN</h1>
+                        <a href="/">
+                            <h1 class="has-text-white-ter is-bold logo-title">SomeDayPWN</h1>
                         <h2 class="has-text-white-ter logo-subtitle">Some day we will PWN it, soon or later</h2>
+                        </a>
                     </div>
                 </div>
                 <a href="http://somedaypwn.pro/writeups" class="navbar-item has-text-white-ter hoverable-link">
                     Writeups
+                </a>
+                <a href="https://ctftime.org/team/162539" class="navbar-item has-text-white-ter hoverable-link">
+                    ctftime
                 </a>
             </div>
          
@@ -19,7 +24,7 @@
                     More
                     </a>
         
-                    <div class="navbar-dropdown is-right is-boxed has-background-grey-dark">
+                    <div class="navbar-dropdown is-right is-boxed">
                         <a class="navbar-item has-text-white-ter hoverable-link" href="http://somedaypwn.pro/cloud">
                             <svg width="25" height="25" fill="#011a42" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
                                 <g>
@@ -69,8 +74,11 @@
 <style>
     nav {
         font-family: 'Silkscreen', cursive;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
     }
-    .navbar {
+    .navbar, .navbar-dropdown {
         background-color: #222222;
     }
     .logo-title{
@@ -82,5 +90,8 @@
     }
     .logo-subtitle{
         font-size: 12px;
+    }
+    .navbar-link:not(.is-arrowless)::after{
+        border-color: #33614a;
     }
 </style>

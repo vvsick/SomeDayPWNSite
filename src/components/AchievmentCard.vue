@@ -7,24 +7,27 @@
                         <img :src="require('../assets/achievs/' + event.image)" 
                         :alt="event.imgAlt">
                     </figure>
-                    <div id="links" class="mt-2">
-                        <a :href=event.link class="mr-1 icon hoverable-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="" class="bi bi-link-45deg" viewBox="0 0 16 16">
-                                <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
-                                <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
-                            </svg>
-                        </a>
-                    </div>
                 </article>
                 <div class="media-content has-text-left">
                     <div class="content">
                         <div class="content">
-                            <p class="nickname">
-                                <strong class="has-text-white-ter">{{event.title}}</strong> 
-                            </p>
+                            <a :href=event.link class="hoverable-link has-text-white-ter nickname">
+                                <strong>{{event.title}}</strong>
+                            </a>
                         </div>
-                        <div class="description_events">
+                        <div class="event-format description_events mb-3">
+                            <p class="mx-1 has-text-white-ter">{{event.format}}</p>
+                        </div>
+                        <div class="description_events mb-3">
                             <p class="has-text-grey-lighter">{{event.description}}</p>
+                        </div>
+                        <div class="description_events has-text-white-ter">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3 mr-2" >
+                                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>{{event.date}}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -44,18 +47,14 @@
     }
 </script>
 
-<style>
-    img {
-        object-fit: cover;
-        border-radius: 5px;
+<style scoped>
+    .content {
+      margin: 0 !important;  
     }
-    .description_events {
-        line-height: 1.1;
-        font-size: 30px;
-    }
-    .wrapper:last-child {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        justify-self: center;
+    .event-format{
+        border: 2px solid #33614a;
+        width: max-content;
+        border-radius: 8px;
+        background-color: #33614a;
     }
 </style>

@@ -26,7 +26,13 @@
                 </article>
                 <div class="media-content has-text-left">
                     <div class="content">
-                        <p class="nickname"> <strong class="has-text-white-ter">{{participant.nickname}}</strong> </p>
+                        <p class="nickname mr-2"> <strong class="has-text-white-ter">{{participant.nickname}}</strong> </p>
+                        <div class="participant-skills has-text-white-ter mr-2" 
+                        v-for="(skill, index) in participant.skills"
+                        :key="index"
+                        >
+                            <p class="mx-1">{{skill}}</p>
+                        </div>
                     </div>
                     <div class="description">
                         <p class="has-text-grey-lighter">{{participant.ruDescription}}</p>
@@ -47,3 +53,17 @@
         },
     }
 </script>
+
+<style scoped>
+    .participant-skills {
+        display: inline-block;
+        border: 2px solid #33614a;
+        width: max-content;
+        border-radius: 8px;
+        background-color: #33614a;
+    }
+    .nickname {
+        display: inline-block;
+        margin-bottom: 0 !important;
+    }
+</style>

@@ -27,7 +27,7 @@
         </div>
 
         <div class="container">
-            <p class="has-text-white-ter title mt-5">Достижения / Achievments:</p>
+            <p class="has-text-white-ter title my-5">Достижения / Achievments:</p>
         </div>
 
         <div class="achievments-container mx-2">
@@ -68,6 +68,7 @@ import AchievmentCard from './AchievmentCard.vue'
                         nickname: 'wellafl3x',
                         ruDescription: 'Владимир Моисеев, 21 год. Студент Института Магистратуры СПбГУТ. Свое увлечение пентестингом нашел еще в старшей школе, тестируя свою систему на проникновение с помощью вредоносного ПО и утилит брутфорса. В университете развил свои навыки в области межсетевого взаимодействия и администрирования сетей.',
                         enDescription: 'Vladimir Moiseev, 21 y.o. Master`s degree student of SPbSUT. Found his passion for pentesting in high elementary school while testing his system for penetration using malware and bruteforce utilities. At the university developed his skills in the filed of internetworking and network administration.',
+                        skills: ['traffic', 'forensic', 'crypto']
                     },
                     {
                         image: 'dim.jpg',
@@ -78,6 +79,7 @@ import AchievmentCard from './AchievmentCard.vue'
                         nickname: 'SpiritOfSea',
                         ruDescription: 'Дмитрий Подобед, 22 года. Выпускник факультета ИКСС СПбГУТ. Из предпочтений Дмитрия можно отметить решение задач по поиску WEB-уязвимостей, PWN, а также RE. В настоящее время работает инженером по информацонной безопасности в одной из больших компаний.',
                         enDescription: 'Dmitriy Podobed, 22 y.o. IKSS faculty graduate of SPbSUT. Among Dmitry`s preferences, we can note the solution for finding WEB vulnerabilities, PWN and Reverse engeneerin. He`s currently working as an cybersecurity engineer in one of the large companies.',
+                        skills: ['web', 'pwn', 'forensic', 'programming']
                     },
                     {
                         image: 'vvsix.jpg',
@@ -88,6 +90,7 @@ import AchievmentCard from './AchievmentCard.vue'
                         nickname: 'vvsix',
                         ruDescription: 'Владимир Осыкин, 22 года. Выпускник факультета ИКСС СПбГУТ. Из сильных сторон можно отметить решение задач в сферах стеганографии, криптографии и OSINT, так же интересуется эксплуатацией WEB-уязвимостей.',
                         enDescription: 'Vladimir Osykin, 22 y.o. Graduate of the faculty of IKSS SPbSUT. Of the strengths, one can note the solution of problems in the areas of steganography, cryptography and OSINT, he is also interested in the exploitation of WEB vulnerabilities.',
+                        skills: ['osint', 'stego', 'web']
                     },
                     {
                         image: 'andrey.jpg',
@@ -98,6 +101,7 @@ import AchievmentCard from './AchievmentCard.vue'
                         nickname: 'Sweety_Sweat',
                         ruDescription: 'Андрей Урсегов, 22 года. Студент Института Магистратуры СПбГУТ. В университете развил свои навыки администрирования различных серверных решений, отточил навыки взаимодействия с различными БД. Хорошо зарекомендовал себя в качетсве DevOps иженера, коим и работает в данный момент. Предпочитает решение RE, Programming  и PWN задач.',
                         enDescription: 'Andrey Ursegov, 22 y.o. Master`s degree student of SPbSUT. At the university, he developed his skills in administering various server solutions, honed his skills in interacting with various databases. He has proven himself as a DevOps engineer, which he currently works with. Prefers solving RE, Programming and PWN tasks.',
+                        skills: ['reverse', 'sql', 'programming']
                     },
                     {
                         image: 'yana.jpg',
@@ -108,6 +112,7 @@ import AchievmentCard from './AchievmentCard.vue'
                         nickname: 'Yaperko',
                         ruDescription: 'Яна Перминова, 22 года. Студет Института Магистратуры СПбГУТ. Предпочитает решать сложные задачи в областях OSINT, Digital Forensics, криптографии и стеганографии. В данный момент работает техническим инженером в научно-техническом центре.',
                         enDescription: 'Yana Perminova, 22 y.o. Master`s degree student of SPbSUT. Prefers solving hard tasks in OSINT, Digital Forensics, Crypto and Steganography. Currently working as technical engeneer in STC.',
+                        skills: ['osint', 'stego', 'crypto']
                     }
                 ],
                 eventsData: [
@@ -115,36 +120,46 @@ import AchievmentCard from './AchievmentCard.vue'
                         image: 'Cyber_Sec.png',
                         imgAlt: 'Cyber Sec logo',
                         link: 'http://sut.ru/bonchnews/science/17-12-2021-Cyber_Security-hackathon',
-                        title: 'Cyber_Security hakathon-2021',
-                        description: '1st place among 29 teams'
+                        title: 'Cyber_Security hackathon-2021',
+                        description: '1st place among 29 teams',
+                        date: '5.01.2021 - 10.01.2021',
+                        format: 'Docker vuln`s'
                     },
                     {
                         image: 'knight.png',
                         imgAlt: 'KnightCTF logo',
                         link: 'https://ctftime.org/event/1545',
                         title: 'KnightCTF 2022',
-                        description: '142nd  place among 751 teams'
+                        description: '142nd  place among 751 teams',
+                        date: '20.01.2022 - 21.01.2022',
+                        format: 'Jeopardy'
                     },
                     {
                         image: 'home.png',
                         imgAlt: 'StayHome logo',
                         link: 'https://ctftime.org/event/1463',
                         title: 'Stay ~/ CTF 2022',
-                        description: '32nd place among 112 teams'
+                        description: '32nd place among 112 teams',
+                        date: '06.02.2022',
+                        format: 'Attack / Defence'
                     },
                     {
                         image: 'Vu.png',
                         imgAlt: 'Vu Cyberthon logo',
                         link: 'https://ctftime.org/event/1518/',
                         title: 'Vu Cyberthon 2022',
-                        description: '44th place among 404 teams'
+                        description: '44th place among 404 teams',
+                        date: '17.02.2022 - 18.02.2022',
+                        format: 'Jeopardy'
                     },
                     {
                         image: 'logo_deadface_ctf.png',
                         imgAlt: 'Deadface Ctf logo',
                         link: 'https://ctftime.org/event/1692',
                         title: 'DeadFace CTF 2022',
-                        description: '63rd place among 1173 teams'
+                        description: '63rd place among 1173 teams',
+                        date: '14.10.2022 - 16.10.2022',
+                        format: 'Jeopardy'
                     }
                 ],
             };
@@ -165,6 +180,7 @@ import AchievmentCard from './AchievmentCard.vue'
     img {
         object-fit: cover;
         border-radius: 5px;
+        
     }
     .description {
         line-height: 1.1;
@@ -172,7 +188,7 @@ import AchievmentCard from './AchievmentCard.vue'
     }
     .description_events {
         line-height: 1.1;
-        font-size: 30px;
+        font-size: 20px;
     }
     .member-info-container, .achievments-container {
         display: grid;
@@ -186,8 +202,8 @@ import AchievmentCard from './AchievmentCard.vue'
         background-color: #222222;
     }
     .hoverable-link:hover {
-        fill: #57a37b !important;
-        color: #57a37b !important;
+        fill: #33614a !important;
+        color: #33614a !important;
     }
     .icon {
         fill: #ffffff;
